@@ -26,4 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)button:(id)sender {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH:mm:ss"];
+    NSDate *now = [NSDate date];
+    self.label.text = [formatter stringFromDate:now];
+}
 @end
