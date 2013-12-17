@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    int a = 10;
+    a += 5+2*2;
+    NSLog(@"答え %d", a);
 }
 
 - (void)didReceiveMemoryWarning
